@@ -28,7 +28,7 @@ New file: clean_notebook.html
 ```
 
 [Here is link to the *before* picture](https://github.com/RAvdek/notebook_cleaner/blob/master/examples/my_notebook.html)
-[... and a link to the *after* picture](iframe src="https://github.com/RAvdek/notebook_cleaner/blob/master/examples/clean_notebook.html)
+[... and a link to the *after* picture](https://github.com/RAvdek/notebook_cleaner/blob/master/examples/clean_notebook.html)
 
 ## To do
 - Need to work out the removal of warnings
