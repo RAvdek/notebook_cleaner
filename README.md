@@ -27,8 +27,8 @@ $ python notebook_cleaner.py examples/my_notebook.html examples/clean_notebook.h
 New file: clean_notebook.html
 ```
 
-[Here is link to the *before* picture](https://github.com/RAvdek/notebook_cleaner/blob/master/examples/my_notebook.html)
-[... and a link to the *after* picture](https://github.com/RAvdek/notebook_cleaner/blob/master/examples/clean_notebook.html)
+[Here is link to the *before* picture](https://htmlpreview.github.io/?https://github.com/RAvdek/notebook_cleaner/blob/master/examples/my_notebook.html)
+[... and a link to the *after* picture](https://htmlpreview.github.io/?https://github.com/RAvdek/notebook_cleaner/blob/master/examples/clean_notebook.html)
 
 ## To do
 - Need to work out the removal of warnings
