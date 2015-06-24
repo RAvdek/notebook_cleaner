@@ -9,12 +9,14 @@ You want to do some data analysis in iPython and you want to show your results t
 
 ## Documentation
 
+```
 Usage:
   notebook_cleaner.py <infile> <outfile>
   notebook_cleaner.py (-h | --help)
 
 Option:
   -h --help  	Prints this message
+```
 
 ## An example
 
@@ -25,11 +27,8 @@ $ python notebook_cleaner.py examples/my_notebook.html examples/clean_notebook.h
 New file: clean_notebook.html
 ```
 
-Here is the *before* picture:
-<iframe src="https://github.com/RAvdek/notebook_cleaner/blob/master/examples/my_notebook.html"></iframe>
-
-... and the *after* picture:
-<iframe src="https://github.com/RAvdek/notebook_cleaner/blob/master/examples/clean_notebook.html"></iframe>
+[Here is link to the *before* picture](https://github.com/RAvdek/notebook_cleaner/blob/master/examples/my_notebook.html)
+[... and a link to the *after* picture](iframe src="https://github.com/RAvdek/notebook_cleaner/blob/master/examples/clean_notebook.html)
 
 ## To do
 - Need to work out the removal of warnings
