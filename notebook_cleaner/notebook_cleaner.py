@@ -1,47 +1,56 @@
+#! /usr/bin/env python3
 """ notebook_cleaner
 
 Removes code and prompts from an HTML export of an iPython notebook.
 
 Usage:
-  notebook_cleaner.py <infile> <outfile>
-  notebook_cleaner.py (-h | --help)
+  notebook_cleaner <infile> [<outfile>]
+  notebook_cleaner (-h | --help)
 
 Option:
   -h --help  	Prints this message
+  -f --force    Don't prompt when execution will overwrite existing file
 """
 
 import sys
 from bs4 import BeautifulSoup
 from docopt import docopt
 
+JUNK_CLASSES = ['input', 'prompt']
+
 def notebook_cleaner(infile, outfile):
 	""" Removes code and prompts from HTML exports of an iPython notebook """
-	in_f = open(infile, 'r')
-	text = in_f.read()
-	soup = BeautifulSoup(text)
-	in_f.close()
 
-	junk_tags = soup.find_all(class_=['input', 'prompt'])
+	with open(infile, 'r') as in_f:
+		soup = BeautifulSoup(in_f.read())
+
+	junk_tags = soup.find_all(class_=JUNK_CLASSES)
 	for tag in junk_tags:
 		tag.decompose()
 
-	out_f = open(outfile, 'w')
-	out_f.write(str(soup))
-	out_f.close()
+	with open(outfile, 'w') as out_f:
+		out_f.write(str(soup))
 
 def main():
 	""" Flow for command line usage """
-	cli_context = docopt(__doc__)	
+	cli_context = docopt(__doc__)
 	infile = cli_context['<infile>']
 	outfile = cli_context['<outfile>']
+	print(cli_context)
+	if infile.split('.')[-1].lower() != 'html':
+		raise Exception("Not reading from a *.html file")
+
+	if not outfile:
+		outfile = infile
 
 	if infile == outfile:
-		confirm = raw_input("Overwrite {0}? (y/n)".format(infile))
+		confirm = input("Overwrite {0}? (y/n):\t".format(infile))
 		if confirm.lower() not in ['y', 'yes']:
 			return 0
+
 	notebook_cleaner(infile, outfile)
 	print("New file {0}".format(outfile))
-	return 0
+	sys.exit(0)
 
 if __name__ == '__main__':
-	sys.exit(main())
+	main()
