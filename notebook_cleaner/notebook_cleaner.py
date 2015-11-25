@@ -36,7 +36,7 @@ def main():
 	cli_context = docopt(__doc__)
 	infile = cli_context['<infile>']
 	outfile = cli_context['<outfile>']
-	print(cli_context)
+
 	if infile.split('.')[-1].lower() != 'html':
 		raise Exception("Not reading from a *.html file")
 

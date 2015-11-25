@@ -6,6 +6,10 @@ A command line tool for removing code blocks and prompts from an HTML export of 
 
 You want to do some data analysis in iPython and you want to show your results to someone who doesn't care to see your code.
 
+## Installation
+
+`pip install notebook_cleaner`
+
 ## Usage
 
 ```
@@ -31,6 +35,7 @@ New file: clean_notebook.html
 ```
 
 [Here is link to the *before* picture](https://htmlpreview.github.io/?https://github.com/RAvdek/notebook_cleaner/blob/master/examples/my_notebook.html)
+
 [... and a link to the *after* picture](https://htmlpreview.github.io/?https://github.com/RAvdek/notebook_cleaner/blob/master/examples/clean_notebook.html)
 
 ## To do
