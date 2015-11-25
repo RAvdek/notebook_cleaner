@@ -3,7 +3,7 @@ from setuptools import setup
 install_requires = ['docopt', 'beautifulsoup4']
 
 readme = ""
-with open("README.rst") as readme_file:
+with open("README.md") as readme_file:
     readme = readme_file.read()
 
 setup(
