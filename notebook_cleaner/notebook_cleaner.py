@@ -22,7 +22,7 @@ def notebook_cleaner(infile, outfile):
 	""" Removes code and prompts from HTML exports of an iPython notebook """
 
 	with open(infile, 'r') as in_f:
-		soup = BeautifulSoup(in_f.read(), 'lxml')
+		soup = BeautifulSoup(in_f.read(), 'html.parser')
 
 	junk_tags = soup.find_all(class_=JUNK_CLASSES)
 	for tag in junk_tags:
