@@ -34,11 +34,6 @@ $ python notebook_cleaner.py my_notebook.html clean_notebook.html
 New file: clean_notebook.html
 ```
 
-[Here is link to the *before* picture](https://htmlpreview.github.io/?https://github.com/RAvdek/notebook_cleaner/blob/master/examples/my_notebook.html)
+[Here is link to the *before* picture](https://htmlpreview.github.io/?https://github.com/RAvdek/notebook_cleaner/blob/master/examples/sample_notebook.html)
 
-[... and a link to the *after* picture](https://htmlpreview.github.io/?https://github.com/RAvdek/notebook_cleaner/blob/master/examples/clean_notebook.html)
-
-## To do
-- Need to work out the removal of warnings.
-- Images also leave behind some undesireable junk.
-- More edge cases could become apparent with use
+[... and a link to the *after* picture](https://htmlpreview.github.io/?https://github.com/RAvdek/notebook_cleaner/blob/master/examples/cli_clean_notebook.html)
