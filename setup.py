@@ -8,7 +8,7 @@ with open("README.md") as readme_file:
 
 setup(
     name='notebook_cleaner',
-    version='0.1.3',
+    version='0.1.4',
     description="Remove code from HTML files rendered from Jupyter notebooks",
     long_description=readme,
     url="https://github.com/RAvdek/notebook_cleaner",
