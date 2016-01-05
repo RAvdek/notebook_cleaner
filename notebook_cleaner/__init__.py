@@ -1,1 +1,1 @@
-from core import notebook_cleaner
+from .core import notebook_cleaner
