@@ -2,13 +2,9 @@ from setuptools import setup
 
 install_requires = ['docopt', 'beautifulsoup4']
 
-readme = ""
-with open("README.md") as readme_file:
-    readme = readme_file.read()
-
 setup(
     name='notebook_cleaner',
-    version='0.1.4',
+    version='0.1.5',
     description="Remove code from HTML files rendered from Jupyter notebooks",
     long_description=readme,
     url="https://github.com/RAvdek/notebook_cleaner",
