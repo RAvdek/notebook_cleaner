@@ -4,7 +4,7 @@ install_requires = ['docopt', 'beautifulsoup4']
 
 setup(
     name='notebook_cleaner',
-    version='0.1.5',
+    version='0.1.6',
     description="Remove code from HTML files rendered from Jupyter notebooks",
     url="https://github.com/RAvdek/notebook_cleaner",
     author="Russell Avdek",
